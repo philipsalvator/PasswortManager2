@@ -262,6 +262,8 @@ public class mainFrame extends JFrame {
         btnAbmelden.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 mainPanel.hide();
+                setBounds(100, 100, 424, 230);
+                setLocationRelativeTo(null);
                 loginPanel.show();
                 try {
                     FileOutputStream fos = new FileOutputStream("data");
