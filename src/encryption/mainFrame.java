@@ -49,7 +49,7 @@ public class mainFrame extends JFrame {
     public mainFrame() {
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(100, 100, 800, 800);
+        setBounds(100, 100, 424, 230);
         setLocationRelativeTo(null);
         setResizable(false);
         getContentPane().setLayout(new CardLayout(0, 0));
@@ -114,6 +114,8 @@ public class mainFrame extends JFrame {
                 if (masterBenutzername == "user" && operation.verifyPassword(passwordField.getText())) {
                     System.out.println("Login erfolgreich");
                     loginPanel.hide();
+                    setBounds(100, 100, 800, 800);
+                    setLocationRelativeTo(null);
                     mainPanel.show();
                     txtBenutzername.setText("");
                     passwordField.setText("");
