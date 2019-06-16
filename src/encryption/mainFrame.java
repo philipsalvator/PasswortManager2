@@ -12,7 +12,8 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class mainFrame extends JFrame {
-//Test
+//Test1
+
     private static final String ALPHA_NUM = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private JPasswordField passwordField;
     private JTextField txtBenutzername;
